@@ -41,7 +41,8 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 233, 216, 216),
+      backgroundColor: const Color.fromARGB(255, 255, 253, 253),
+      resizeToAvoidBottomInset: true,
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 30), // The Padding widget adds horizontal padding of 45 pixels on both sides of the child widget, which is the Column containing the login form elements.
@@ -111,14 +112,14 @@ class _LoginScreenState extends State<LoginScreen> {
                     filled: true,
                     fillColor: Colors.white,
                     enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(16),
+                      borderRadius: BorderRadius.circular(15),
                       borderSide: BorderSide(
                         color: emailFocused ? green : const Color(0xFFDDDDDD),
                         width: emailFocused ? 4 : 1.2,
                       ),
                     ),
                     focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(16),
+                      borderRadius: BorderRadius.circular(15),
                       borderSide: const BorderSide(color: green, width: 4),
                     ),
                   ),
@@ -171,14 +172,14 @@ class _LoginScreenState extends State<LoginScreen> {
                   filled: true,
                   fillColor: Colors.white,
                   enabledBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(16),
+                    borderRadius: BorderRadius.circular(15),
                     borderSide: const BorderSide(
                       color: Color(0xFFDDDDDD),
                       width: 1.2,
                     ),
                   ),
                   focusedBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(16),
+                    borderRadius: BorderRadius.circular(15),
                     borderSide: const BorderSide(color: green, width: 2),
                   ),
                 ),
@@ -256,3 +257,64 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 }
+
+
+
+
+
+
+
+// how to declare a variable in dart
+// In Dart, you can declare a variable using the `var`, 
+//`final`, or `const` keywords, depending on whether the 
+//variable's value can change or not. Here are some examples:
+// var name = "John";
+// final age = 30; // This variable cannot be reassigned after
+// its initial value is set.
+// const pi = 3.14; // This variable 
+//is a compile-time constant and cannot
+  //be reassigned or modified.
+  
+  //ternary operator in dart
+  // The ternary operator in Dart 
+  //is a shorthand way of writing an if-else
+  // statement
+  // It takes three operands: a condition,
+  // a value to return if the condition is true, 
+  //and a value to return if the condition is false.
+  // Here's an example:
+  // int number = 10;
+  // String result = (number > 0) ? "Positive" : "Negative";
+  // In this example, the condition (number > 0) is true,
+  // so the value of result will be "Positive". 
+  
+  //for loop in dart
+  // A for loop in Dart is used to execute a block of code
+  // repeatedly for a specified number of times.
+  // Here's an example:
+  // for (int i = 0; i < 5; i++) {
+  //   print(i);
+  // }    
+
+  //explain while and do while loop in dart
+  // A while loop in Dart is used to execute a block of code
+  // repeatedly as long as
+  // a specified condition is true. The condition is checked 
+  //before each iteration of the loop. Here's an example:
+  // int i = 0;
+  // while (i < 5) {
+  //   print(i);
+  //   i++;
+  // }
+  
+  // A do-while loop in Dart is similar to a while loop, but the condition is checked 
+  //after each iteration of the loop. This means that the block of code will always be executed at least once. Here's an example:
+  // int j = 0;
+  // do {
+  //   print(j);
+  //   j++;
+  // } while (j < 5);   
+  // In this example, the block of code will be executed 
+  //once before checking the condition (j < 5).
+  // The loop will continue to execute as long as the condition is true.
+  // The main difference between a while loop and a do-while loop is that a while loop checks the condition before executing the block of code, while a do-while loop checks the condition after executing the block of code.
